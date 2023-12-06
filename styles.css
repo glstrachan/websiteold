@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Universe';
+  src: url('./fonts/Univers\ 57\ Condensed\ Oblique.otf') format('opentype');
+}
+
+html {
+  font-family: 'Universe';
+  line-height: 0.85;
+  color: rgb(253, 8, 39);
+  background-color: rgb(10, 12, 15);
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-image: url('background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.body-box {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.side-panel {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(253, 8, 39, 0.5);
+  background-color: rgba(253, 8, 39, 0.5);
+
+  width: 20px;
+}
+
+.line {
+  border-top: 2px solid rgba(253, 8, 39, 0.5); 
+  margin: 10px 0; 
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 45%;
+}
+
+@media (max-width: 1500px) {
+  .main-container {
+      width: 100%;
+  }
+}
+
+.label {
+  margin: 10px;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2em;
+  color: rgba(253, 8, 39, 0.7);
+
+  text-align: left;
+  vertical-align: top;
+}
+
+.box-container {
+  display: flex;
+  align-items: stretch;
+  margin: 10px 0;
+
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(253, 8, 39, 0.5);
+}
+
+.text-container {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+  color: rgba(253, 8, 39, 0.7);
+  margin: 20px;
+  width: fit-content;
+}
+
+.text-container-projects {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: rgba(253, 8, 39, 0.7);
+  margin: 20px;
+  width: fit-content;
+}
+
+.header {
+  letter-spacing: -0.01em;
+  font-size: 3em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.navbar-title {
+  padding: 50px;
+  font-size: 4em;
+  letter-spacing: 0.3em;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  width: auto;
+  height: 50px;
+}

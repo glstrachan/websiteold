@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Graydon Strachan</title>
+  <script>
+    function openPDF() {
+      var pdfPath = './Resume.pdf';
+      window.open(pdfPath, '_blank');
+    }
+
+    function openWebpage(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-title">[GRAYDON STRACHAN]</div>
+    <div class="navbar-title" style="cursor: pointer;" onclick="openPDF()">+RESUME</div>
+  </div>
+  <div style="height: 80px;"></div>
+  <div class="body-box">
+    <div class="main-container">
+      <div class="header">ABOUT</div>
+      <div class="line"></div>
+      <div class="box-container">
+        <div class="side-panel"></div>
+        <div class="text-container">
+          Hi, I'm Graydon Strachan, a Computer Engineering student at the University of British Columbia. I have a
+          passion for <em>tackling complex problems</em>, with experience ranging from autonomous aircraft systems to
+          custom
+          language compilers.
+          <div style="height: 10px;"></div>
+          Outside of programming, I enjoy developing shaders, playing soccer, running, and snowboarding. I'm also a
+          professionally trained sushi chef, a testament to my belief in lifelong learning across diverse fields.
+        </div>
+      </div>
+      <div class="box-container" style="height: 4em;">
+        <div style="width: 70%; border-right: 2px solid rgba(253, 8, 39, 0.5);"></div>
+        <div class="label">2023-12-5</div>
+      </div>
+      <div class="line" style="margin-bottom: 30px ;"></div>
+      <div class="header">CONTACT</div>
+      <div class="line"></div>
+      <a href="mailto:glstrachan@outlook.com" style="text-decoration: none; outline: none;">
+        <div class="box-container" style="cursor: pointer; height: 4em;">
+          <div class="label" style="width: 20%;">EMAIL</div>
+          <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);"></div>
+          <div class="text-container" style="margin: auto; line-height: 0.9em;">
+            glstrachan@outlook.com
+          </div>
+        </div>
+      </a>
+
+      <div class="box-container" style="cursor: pointer; height: 4em;"
+        onclick="openWebpage('https\://github.com/glstrachan')">
+        <div class="label" style="width: 20%;">GITHUB</div>
+        <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);"></div>
+        <div class="text-container" style="margin: auto; line-height: 0.9em;">
+          github.com/glstrachan
+        </div>
+
+      </div>
+      <div class="box-container" style="cursor: pointer; height: 4em; margin-bottom: 30px;"
+        onclick="openWebpage('https\://linkedin.com/in/graydon-strachan')">
+        <div class="label" style="width: 20%;">LINKEDIN</div>
+        <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);"></div>
+        <div class="text-container" style="margin: auto; line-height: 0.9em;">
+          linkedin.com/in/graydon-strachan
+        </div>
+
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="header">PROJECTS</div>
+      <div style="display: flex;">
+        <svg class="decoration" style="margin: 10px 0;" xmlns="http://www.w3.org/2000/svg" width="20%" height="100%"
+          viewBox="0 0 100 100">
+          <image href="./decoration.svg" width="100%" height="100%" />
+        </svg>
+        <div style="flex: 1; margin-left: 20px;">
+          <div class="line"></div>
+          <div class="box-container" style="margin-bottom: 0;">
+            <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);">
+              <div class="text-container" style="font-weight: bold; line-height: 0.9em;">
+                C++ Neural Network Library
+              </div>
+            </div>
+            <div class="label"></div>
+          </div>
+          <div class="box-container" style="margin-top: 0; border-top: 0;">
+            <div class="text-container-projects">
+              Developed an optimized machine learning library from scratch, supporting multiple activation functions,
+              Genetic Algorithm integration, and a custom backpropagation algorithm.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <svg class="decoration" style="margin: 10px 0;" xmlns="http://www.w3.org/2000/svg" width="20%" height="100%"
+          viewBox="0 0 100 100">
+          <image href="./decoration.svg" width="100%" height="100%" />
+        </svg>
+        <div style="flex: 1; margin-left: 20px;">
+          <div class="line"></div>
+          <div class="box-container" style="margin-bottom: 0;">
+            <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);">
+              <div class="text-container" style="font-weight: bold; line-height: 0.9em;">
+                Neural SDFs
+              </div>
+            </div>
+            <div class="label"></div>
+          </div>
+          <div class="box-container" style="margin-top: 0; border-top: 0;">
+            <div class="text-container-projects">
+              Trained a TensorFlow-based neural network to predict Signed Distance Functions for 3D meshes, accompanied
+              by a WebGPU ray marcher using the Blinn-Phong reflection model.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <svg class="decoration" style="margin: 10px 0;" xmlns="http://www.w3.org/2000/svg" width="20%" height="100%"
+          viewBox="0 0 100 100">
+          <image href="./decoration.svg" width="100%" height="100%" />
+        </svg>
+        <div style="flex: 1; margin-left: 20px;">
+          <div class="line"></div>
+          <div class="box-container" style="margin-bottom: 0;">
+            <div style="border-right: 2px solid rgba(253, 8, 39, 0.5);">
+              <div class="text-container" style="font-weight: bold; line-height: 0.9em;">
+                Custom Language Compiler
+              </div>
+            </div>
+            <div class="label"></div>
+          </div>
+          <div class="box-container" style="margin-top: 0; border-top: 0;">
+            <div class="text-container-projects">
+              Developing a custom compiler front end (mu language syntax) with optimized keyword tokenization and a
+              top-down recursive descent parser. Utilizing LLVM for the back end to ensure compatibility with target
+              architectures.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<svg class="logo" xmlns="http://www.w3.org/2000/svg">
+    <image href="./logo.svg" width="100%" height="100%" />
+  </svg>-->
+</body>
+
+</html>
